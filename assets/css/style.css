@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    margin: 1rem auto auto;
+
+    & h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    & span {
+        font-weight: 600;
+        color: green;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.day {
+
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.selected {
+    font-weight: 600;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+}
+
+.selected_day {
+    margin: 2rem auto;
+    text-align: center;
+
+    & span {
+        font-weight: 600;
+        color: deepskyblue;
+    }
+}
+
+.current_day {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+}
